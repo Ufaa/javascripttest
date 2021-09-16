@@ -14,18 +14,15 @@ function isLeapYear(year) {
 
 //2つ定義して表示できないか試した。エラーは出ていないが、これでいいのか悪いのか。。。
 let checkYear = 2020;
-let checkYear2 = 2021;
-if (isLeapYear(checkYear, checkYear2)) {
-  console.log(checkYear, checkYear2 + '年はうるう年です');
+if (isLeapYear(checkYear)) {
+  console.log(checkYear+ '年はうるう年です');
 } else {
-  console.log(checkYear, checkYear2 + '年はうるう年ではありません');
+  console.log(checkYear+ '年はうるう年ではありません');
 };
 
-//２つ命令を作って表示させようとした→エラー
-//let checkYear = 2021;
-//if (isLeapYear(checkYear)) {
-//  console.log(checkYear + '年はうるう年です');
-//} else {
-//  console.log(checkYear + '年はうるう年ではありません');
-//};
-
+let checkYear2 = 2021;
+if (isLeapYear(checkYear2)) {
+  console.log(checkYear2 + '年はうるう年です');
+} else {
+  console.log(checkYear2 + '年はうるう年ではありません');
+};
